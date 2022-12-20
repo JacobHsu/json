@@ -62,7 +62,7 @@ const collections = [];
 const created = [];
 const buy = [];
 
-Array.from({ length: 6 }).forEach((item, index) => {
+Array.from({ length: 20 }).forEach((item, index) => {
   collections.push(createRandomNFT(index));
 });
 
