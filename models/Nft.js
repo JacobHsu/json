@@ -9,6 +9,9 @@ function createRandomUser() {
   };
 }
 
+function getRandom(x){
+  return Math.floor(Math.random()*x);
+}
 
 function createRandomNFT(randomNum) {
 
@@ -27,7 +30,7 @@ function createRandomNFT(randomNum) {
   return {
     id: faker.datatype.uuid(),
     title: faker.internet.userName(),
-    img: fakerImage[randomNum],
+    img: fakerImage[getRandom(9)],
     price: faker.finance.amount(),
     company: faker.company.companyName(),
     info: faker.lorem.paragraph(),
